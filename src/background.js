@@ -25,7 +25,7 @@ export async function installedListener(details) {
     // Open migration screen.
     tabsApi.create({
       url: "migration.html?previous=" + previous,
-      active true,
+      active: true,
     });
   } else {
     // Sanitize settings with default values.
@@ -35,7 +35,7 @@ export async function installedListener(details) {
     if (_.get(details, "reason") === "install") {
       tabsApi.create({
         url: MiscURLs.INSTALLED_URL,
-        active true,
+        active: true,
       });
 
       await ConfigFile.updateNow();
@@ -525,7 +525,7 @@ tabsApi.create({
 
 tabsApi.create({
   url: url,
-active config.RSAConfigNewTab,
+active: config.RSAConfigNewTab,
       });
     }
   },
