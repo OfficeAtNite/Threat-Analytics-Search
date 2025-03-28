@@ -12,6 +12,8 @@ import { getGroupProviders, getProviderTargetURL } from "./js/shared/misc";
 import ConfigFile from "./js/shared/config_file";
 import LocalStore from "./js/shared/local_store";
 
+const tabsApi = typeof browser !== "undefined" ? browser.tabs : chrome.tabs;
+
 // Install handler.
 chrome.runtime.onInstalled.addListener(installedListener);
 
@@ -21,7 +23,7 @@ export async function installedListener(details) {
 
   if (!_.isEmpty(previous) && previous.split(".")[0] === "4") {
     // Open migration screen.
-    chrome.tabs.create({
+    tabsApi.create({
       url: "migration.html?previous=" + previous,
       selected: true,
     });
@@ -31,7 +33,7 @@ export async function installedListener(details) {
 
     // If the user is installing for the first time, open welcome screen and update settings with newer values.
     if (_.get(details, "reason") === "install") {
-      chrome.tabs.create({
+      tabsApi.create({
         url: MiscURLs.INSTALLED_URL,
         selected: true,
       });
@@ -334,7 +336,7 @@ export var ContextualMenu = {
 
     var index = settings.enableAdjacentTabs ? tab.index + 1 : null;
 
-    (chrome.tabs || browser.tabs).create({
+    tabsApi.create({
       url: targetURL,
       active: !settings.resultsInBackgroundTab,
       index: index,
@@ -360,11 +362,11 @@ export var ContextualMenu = {
     } else {
       var index = tab.index;
       for (var i = 0; i < urls.length; i++) {
-        chrome.tabs.create({
-          url: urls[i],
-          selected: !settings.resultsInBackgroundTab,
-          index: settings.enableAdjacentTabs ? ++index : null,
-        });
+        tabsApi.create({
+  url: urls[i],
+  active: !settings.resultsInBackgroundTab,
+  index: settings.enableAdjacentTabs ? ++index : null,
+});
       }
     }
   },
@@ -400,10 +402,10 @@ export var ContextualMenu = {
         showPopupMessage("Carbon Black", url);
       }
 
-      chrome.tabs.create({
-        url: url,
-        selected: config.CBCConfigNewTab,
-      });
+tabsApi.create({
+  url: url,
+  active: config.CBCConfigNewTab,
+});
     }
   },
 
@@ -473,9 +475,10 @@ export var ContextualMenu = {
         showPopupMessage("NetWitness Investigator", url);
       }
 
-      chrome.tabs.create({
-        url: url,
-      });
+tabsApi.create({
+  url: url,
+  active: config.CBCConfigNewTab,
+});
     }
   },
 
@@ -520,9 +523,9 @@ export var ContextualMenu = {
         showPopupMessage("RSA Security Analytics", url);
       }
 
-      chrome.tabs.create({
-        url: url,
-        selected: config.RSAConfigNewTab,
+tabsApi.create({
+  url: url,
+selected: config.RSAConfigNewTab,
       });
     }
   },
