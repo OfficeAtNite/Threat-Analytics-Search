@@ -1,8 +1,10 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/AdvancedThreatAnalytics/threat-analytics-search/blob/main/LICENSE)
 
-# Threat Analytics Search Chrome extension
+# Threat Analytics Search Firefox extension
 
-The **Threat Analytics Search** extension allows Google Chrome and Microsoft Edge users to highlight specific text and conduct searches using various services. For instance, if you have a domain name you want to research, you could highlight that domain name and automatically search across as many registrars or threat exchanges you want.
+The **Threat Analytics Search** extension allows Firefox users to highlight specific text and conduct searches using various services. For instance, if you have a domain name you want to research, you could highlight that domain name and automatically search across as many registrars or threat exchanges you want.
+
+NOTE: This was originally a Chromium-based extension.  It has been translated to function in FF but not without issue.  Individual links in the right-click menu will not open.  As a result, Groups have been expanded and will open in a new window.  To make this more usable, many of the OG extension searches have been removed and replaced with the most pertinent OSINT selections.  Additionally, the ability to update on the fly has been removed but may be added back shortly with correlation to this repo.
 
 ## Features
 
