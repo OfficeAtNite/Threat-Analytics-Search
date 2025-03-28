@@ -1,11 +1,11 @@
+node_modules/
+*.env
+*.log
+yarn.lock
+webpack.config.js
+src/
+tests/
+dist/*.map
+.idea/
+.vscode/
 .DS_Store
-
-node_modules
-dist
-dist.zip
-
-# Editor files
-.idea
-.vscode
-
-yarn-error.log*

@@ -1,0 +1,304 @@
+{
+  "searchproviders": [
+    [
+      "searchprovider-0",
+      "D - LevelBlueLabs Domain",
+      "https://otx.alienvault.com/indicator/domain/TESTSEARCH",
+      true,
+      true,
+      2,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-1",
+      "D - VirusTotal Domain Info",
+      "https://www.virustotal.com/gui/domain/%s/detection",
+      true,
+      true,
+      2,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-2",
+      "D - WHOIS DNS Info",
+      "https://who.is/whois/TESTSEARCH",
+      true,
+      true,
+      2,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-3",
+      "H - VirusTotal Hash",
+      "https://www.virustotal.com/gui/file/%s/detection",
+      true,
+      true,
+      4,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-4",
+      "H - LevelBlueLabs File",
+      "https://otx.alienvault.com/indicator/file/TESTSEARCH",
+      true,
+      true,
+      4,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-5",
+      "I - LevelBlueLabs IP",
+      "https://otx.alienvault.com/indicator/ip/TESTSEARCH",
+      true,
+      true,
+      1,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-6",
+      "I - VirusTotal IP Info",
+      "https://www.virustotal.com/gui/ip-address/%s/detection/",
+      true,
+      true,
+      1,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-7",
+      "I - AbuseIPDB",
+      "https://www.abuseipdb.com/check/TESTSEARCH",
+      true,
+      false,
+      1,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      "searchprovider-8",
+      "Google",
+      "https://www.google.com/search?q=TESTSEARCH",
+      true,
+      true,
+      16,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-9",
+      "T - Twitter Term",
+      "https://twitter.com/search?f=realtime&q=TESTSEARCH&src=typd",
+      true,
+      true,
+      16,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-26",
+      "B64 - Decode",
+      "https://cyberchef.threatanalytics.io/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)Remove_null_bytes()&input=TESTB64SEARCH",
+      true,
+      true,
+      8,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-27",
+      "B64 - Decompress",
+      "https://cyberchef.threatanalytics.io/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)Raw_Inflate(0,0,'Adaptive',false,false)&input=TESTB64SEARCH",
+      true,
+      true,
+      8,
+      false,
+      "",
+      false,
+      false
+    ],
+    [
+      "searchprovider-28",
+      "B64 - UnGzip",
+      "https://cyberchef.threatanalytics.io/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)Gunzip()&input=TESTB64SEARCH",
+      true,
+      true,
+      8,
+      false,
+      "",
+      false,
+      false
+    ]
+  ],
+  "groups": [
+    [
+      "1",
+      "IP Lookup"
+    ],
+    [
+      "2",
+      "Domain"
+    ],
+    [
+      "4",
+      "Hash"
+    ],
+    [
+      "8",
+      "B64 Decode"
+    ],
+    [
+      "16",
+      "Misc"
+    ]
+  ],
+  "config": [
+    [
+      "https://example.com/dummy-settings.json",
+      false,
+      false,
+      "",
+      false
+    ]
+  ],
+  "RSA": {
+    "Config": {
+      "RSAConfigEnable": false,
+      "RSAConfigPopup": false,
+      "RSAConfigUseHttps": true,
+      "RSAConfigNewTab": true,
+      "RSAConfigHost": "192.168.1.10",
+      "RSAConfigPort": "",
+      "RSAConfigDevId": "2",
+      "RSAConfigRange1": "1",
+      "RSAConfigRange2": "24",
+      "RSAConfigRange3": "48",
+      "RSAConfigRange4": "720"
+    },
+    "Queries": [
+      [
+        -1,
+        "Search Hostname",
+        "alias.host='TESTSEARCH'",
+        true
+      ],
+      [
+        -1,
+        "Search Source IP",
+        "ip.src=TESTSEARCH",
+        true
+      ],
+      [
+        -1,
+        "Search Destination IP",
+        "ip.dst=TESTSEARCH",
+        true
+      ]
+    ]
+  },
+  "NWI": {
+    "Config": {
+      "NWIConfigEnable": false,
+      "NWIConfigPopup": false,
+      "NWIConfigGMT": false,
+      "NWIConfigHost": "",
+      "NWIConfigPort": "",
+      "NWIConfigCollectionName": "",
+      "NWIConfigRange1": "1",
+      "NWIConfigRange2": "24",
+      "NWIConfigRange3": "48",
+      "NWIConfigRange4": "720"
+    },
+    "Queries": [
+      [
+        -1,
+        "Search Hostname",
+        "alias.host='TESTSEARCH'",
+        true
+      ],
+      [
+        -1,
+        "Search Source IP",
+        "ip.src=TESTSEARCH",
+        true
+      ],
+      [
+        -1,
+        "Search Destination IP",
+        "ip.dst=TESTSEARCH",
+        true
+      ]
+    ]
+  },
+  "CBC": {
+    "Config": {
+      "CBCConfigEnable": false,
+      "CBCConfigPopup": false,
+      "CBCConfigUseHttps": true,
+      "CBCConfigNewTab": true,
+      "CBCConfigHost": "192.168.1.10",
+      "CBCConfigPort": "",
+      "CBCConfigURLVersion": "1"
+    },
+    "Queries": [
+      [
+        -1,
+        "Search All (Mostly Use This)",
+        "q=TESTSEARCH",
+        true
+      ],
+      [
+        -1,
+        "Domain Name (FQDN)",
+        "cb.q.domain=TESTSEARCH",
+        true
+      ],
+      [
+        -1,
+        "Hostname (Has CB Sensor)",
+        "cb.q.hostname=TESTSEARCH",
+        true
+      ],
+      [
+        -1,
+        "Process or EXE",
+        "cb.q.process_name=TESTSEARCH",
+        true
+      ],
+      [
+        -1,
+        "MD5 Hash Search",
+        "cb.q.md5=TESTSEARCH",
+        true
+      ]
+    ]
+  },
+  "update": {}
+}
