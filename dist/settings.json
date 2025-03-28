@@ -1,8 +1,20 @@
 {
   "searchproviders": [
     [
-      "searchprovider-0",
-      "D - LevelBlueLabs Domain",
+      -1,
+      "Google",
+      "https://www.google.com/search?q=TESTSEARCH",
+      true,
+      true,
+      3,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "D - AlienVault OTX Domain",
       "https://otx.alienvault.com/indicator/domain/TESTSEARCH",
       true,
       true,
@@ -10,10 +22,10 @@
       false,
       "",
       false,
-      false
+      ""
     ],
     [
-      "searchprovider-1",
+      -1,
       "D - VirusTotal Domain Info",
       "https://www.virustotal.com/gui/domain/%s/detection",
       true,
@@ -22,10 +34,10 @@
       false,
       "",
       false,
-      false
+      ""
     ],
     [
-      "searchprovider-2",
+      -1,
       "D - WHOIS DNS Info",
       "https://who.is/whois/TESTSEARCH",
       true,
@@ -34,10 +46,82 @@
       false,
       "",
       false,
-      false
+      ""
     ],
     [
-      "searchprovider-3",
+      -1,
+      "D - McAfee TI",
+      "https://www.mcafee.com/enterprise/en-in/search.html?q=TESTSEARCH",
+      true,
+      true,
+      2,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "D - Builtwith",
+      "https://builtwith.com/TESTSEARCH",
+      true,
+      true,
+      2,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "D - TotalHash",
+      "https://totalhash.cymru.com/search/dnsrr:TESTSEARCH",
+      true,
+      true,
+      2,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "D - Robtex DNS",
+      "https://www.robtex.com/TESTSEARCH",
+      true,
+      true,
+      2,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "D - Malwares",
+      "https://www.malwares.com/report/host?host=TESTSEARCH",
+      true,
+      true,
+      2,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "D - Alexa",
+      "https://www.alexa.com/siteinfo/TESTSEARCH",
+      true,
+      true,
+      2,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
       "H - VirusTotal Hash",
       "https://www.virustotal.com/gui/file/%s/detection",
       true,
@@ -46,11 +130,11 @@
       false,
       "",
       false,
-      false
+      ""
     ],
     [
-      "searchprovider-4",
-      "H - LevelBlueLabs File",
+      -1,
+      "H - AlienVault OTX File",
       "https://otx.alienvault.com/indicator/file/TESTSEARCH",
       true,
       true,
@@ -58,11 +142,59 @@
       false,
       "",
       false,
-      false
+      ""
     ],
     [
-      "searchprovider-5",
-      "I - LevelBlueLabs IP",
+      -1,
+      "H - TotalHash",
+      "https://totalhash.com/search/av:TESTSEARCH",
+      true,
+      true,
+      4,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "H - VxStream File - Public",
+      "https://www.hybrid-analysis.com/sample/TESTSEARCH",
+      true,
+      true,
+      4,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "H - Palo Autofocus",
+      "https://autofocus.paloaltonetworks.com/#/sample/TESTSEARCH",
+      false,
+      true,
+      4,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "H - Cylance SHA256",
+      "https://my-vs0.cylance.com/Threats/ThreatDetails/TESTSEARCH",
+      true,
+      true,
+      0,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "I - AlienVault OTX IP",
       "https://otx.alienvault.com/indicator/ip/TESTSEARCH",
       true,
       true,
@@ -70,10 +202,10 @@
       false,
       "",
       false,
-      false
+      ""
     ],
     [
-      "searchprovider-6",
+      -1,
       "I - VirusTotal IP Info",
       "https://www.virustotal.com/gui/ip-address/%s/detection/",
       true,
@@ -82,14 +214,14 @@
       false,
       "",
       false,
-      false
+      ""
     ],
     [
-      "searchprovider-7",
-      "I - AbuseIPDB",
-      "https://www.abuseipdb.com/check/TESTSEARCH",
+      -1,
+      "I - Malwares",
+      "https://www.malwares.com/report/ip?ip=TESTSEARCH",
       true,
-      false,
+      true,
       1,
       false,
       "",
@@ -97,95 +229,102 @@
       ""
     ],
     [
-      "searchprovider-8",
-      "Google",
-      "https://www.google.com/search?q=TESTSEARCH",
+      -1,
+      "I - Anti-Hacker",
+      "https://anti-hacker-alliance.com/index.php?ip=TESTSEARCH",
       true,
       true,
-      16,
+      1,
       false,
       "",
       false,
-      false
+      ""
     ],
     [
-      "searchprovider-9",
+      -1,
+      "I - StopForumSpam",
+      "http://www.stopforumspam.com/ipcheck/TESTSEARCH",
+      true,
+      true,
+      1,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "I - TotalHash",
+      "http://totalhash.com/search/ip:TESTSEARCH",
+      true,
+      true,
+      1,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "RIPE",
+      "https://stat.ripe.net/app/launchpad/TESTSEARCH",
+      true,
+      true,
+      3,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "Google Safe Browsing",
+      "https://transparencyreport.google.com/safe-browsing/search?url=TESTSEARCH",
+      true,
+      true,
+      3,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
+      "Domain Tools",
+      "https://whois.domaintools.com/TESTSEARCH",
+      true,
+      true,
+      3,
+      false,
+      "",
+      false,
+      ""
+    ],
+    [
+      -1,
       "T - Twitter Term",
       "https://twitter.com/search?f=realtime&q=TESTSEARCH&src=typd",
       true,
       true,
-      16,
+      0,
       false,
       "",
       false,
-      false
-    ],
-    [
-      "searchprovider-26",
-      "B64 - Decode",
-      "https://cyberchef.threatanalytics.io/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)Remove_null_bytes()&input=TESTB64SEARCH",
-      true,
-      true,
-      8,
-      false,
-      "",
-      false,
-      false
-    ],
-    [
-      "searchprovider-27",
-      "B64 - Decompress",
-      "https://cyberchef.threatanalytics.io/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)Raw_Inflate(0,0,'Adaptive',false,false)&input=TESTB64SEARCH",
-      true,
-      true,
-      8,
-      false,
-      "",
-      false,
-      false
-    ],
-    [
-      "searchprovider-28",
-      "B64 - UnGzip",
-      "https://cyberchef.threatanalytics.io/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)Gunzip()&input=TESTB64SEARCH",
-      true,
-      true,
-      8,
-      false,
-      "",
-      false,
-      false
+      ""
     ]
   ],
   "groups": [
-    [
-      "1",
-      "IP Lookup"
-    ],
-    [
-      "2",
-      "Domain"
-    ],
-    [
-      "4",
-      "Hash"
-    ],
-    [
-      "8",
-      "B64 Decode"
-    ],
-    [
-      "16",
-      "Misc"
-    ]
+    ["1", "IP Lookup"],
+    ["2", "Domain"],
+    ["3", "Hash"]
   ],
   "config": [
     [
-      "https://raw.githubusercontent.com/OfficeAtNite/Threat-Analytics-Search/refs/heads/main/dist/settings.json",
-      false,
-      false,
+      "https://raw.githubusercontent.com/AdvancedThreatAnalytics/threat-analytics-search/main/settings.json",
+      "true",
+      "false",
       "",
-      false
+      "false"
     ]
   ],
   "RSA": {
@@ -203,24 +342,9 @@
       "RSAConfigRange4": "720"
     },
     "Queries": [
-      [
-        -1,
-        "Search Hostname",
-        "alias.host='TESTSEARCH'",
-        true
-      ],
-      [
-        -1,
-        "Search Source IP",
-        "ip.src=TESTSEARCH",
-        true
-      ],
-      [
-        -1,
-        "Search Destination IP",
-        "ip.dst=TESTSEARCH",
-        true
-      ]
+      [-1, "Search Hostname", "alias.host='TESTSEARCH'", true],
+      [-1, "Search Source IP", "ip.src=TESTSEARCH", true],
+      [-1, "Search Destination IP", "ip.dst=TESTSEARCH", true]
     ]
   },
   "NWI": {
@@ -237,24 +361,9 @@
       "NWIConfigRange4": "720"
     },
     "Queries": [
-      [
-        -1,
-        "Search Hostname",
-        "alias.host='TESTSEARCH'",
-        true
-      ],
-      [
-        -1,
-        "Search Source IP",
-        "ip.src=TESTSEARCH",
-        true
-      ],
-      [
-        -1,
-        "Search Destination IP",
-        "ip.dst=TESTSEARCH",
-        true
-      ]
+      [-1, "Search Hostname", "alias.host='TESTSEARCH'", true],
+      [-1, "Search Source IP", "ip.src=TESTSEARCH", true],
+      [-1, "Search Destination IP", "ip.dst=TESTSEARCH", true]
     ]
   },
   "CBC": {
@@ -268,37 +377,66 @@
       "CBCConfigURLVersion": "1"
     },
     "Queries": [
-      [
-        -1,
-        "Search All (Mostly Use This)",
-        "q=TESTSEARCH",
-        true
-      ],
-      [
-        -1,
-        "Domain Name (FQDN)",
-        "cb.q.domain=TESTSEARCH",
-        true
-      ],
-      [
-        -1,
-        "Hostname (Has CB Sensor)",
-        "cb.q.hostname=TESTSEARCH",
-        true
-      ],
-      [
-        -1,
-        "Process or EXE",
-        "cb.q.process_name=TESTSEARCH",
-        true
-      ],
-      [
-        -1,
-        "MD5 Hash Search",
-        "cb.q.md5=TESTSEARCH",
-        true
-      ]
+      [-1, "Search All (Mostly Use This)", "q=TESTSEARCH", true],
+      [-1, "Domain Name (FQDN)", "cb.q.domain=TESTSEARCH", true],
+      [-1, "Hostname (Has CB Sensor)", "cb.q.hostname=TESTSEARCH", true],
+      [-1, "Process or EXE", "cb.q.process_name=TESTSEARCH", true],
+      [-1, "MD5 Hash Search", "cb.q.md5=TESTSEARCH", true]
     ]
   },
-  "update": {}
+  "update": {
+    "providers": [
+      {
+        "target": ["http://www.google.com/search?q=TESTSEARCH"],
+        "link": "https://www.google.com/search?q=TESTSEARCH"
+      },
+      {
+        "target": ["https://www.virustotal.com/en/domain/%s/information/"],
+        "link": "https://www.virustotal.com/gui/domain/%s/detection"
+      },
+      {
+        "target": ["http://who.is/whois/TESTSEARCH"],
+        "link": "https://who.is/whois/TESTSEARCH"
+      },
+      {
+        "target": [
+          "http://www.mcafee.com/threat-intelligence/domain/default.aspx?domain=TESTSEARCH"
+        ],
+        "link": "https://www.mcafee.com/enterprise/en-in/search.html?q=TESTSEARCH",
+        "label": "D - McAfee TIE"
+      },
+      {
+        "target": ["http://totalhash.com/search/dnsrr:TESTSEARCH"],
+        "link": "https://totalhash.cymru.com/search/dnsrr:TESTSEARCH"
+      },
+      {
+        "target": ["https://www.robtex.com/q/y?q=TESTSEARCH"],
+        "link": "https://www.robtex.com/TESTSEARCH"
+      },
+
+      {
+        "target": ["http://totalhash.com/search/av:TESTSEARCH"],
+        "link": "https://totalhash.com/search/av:TESTSEARCH"
+      },
+      {
+        "target": ["https://www.virustotal.com/en/ip-address/%s/information/"],
+        "link": "https://www.virustotal.com/gui/ip-address/%s/detection/"
+      },
+
+      {
+        "target": ["http://anti-hacker-alliance.com/index.php?ip=TESTSEARCH"],
+        "link": "https://anti-hacker-alliance.com/index.php?ip=TESTSEARCH"
+      },
+      {
+        "target": ["https://stat.ripe.net/TESTSEARCH#tabId=at-a-glance"],
+        "link": "https://stat.ripe.net/app/launchpad/TESTSEARCH"
+      },
+      {
+        "target": [
+          "http://www.google.com/safebrowsing/diagnostic?site=TESTSEARCH"
+        ],
+        "link": "https://transparencyreport.google.com/safe-browsing/search?url=TESTSEARCH"
+      }
+    ]
+  }
 }
