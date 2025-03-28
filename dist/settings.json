@@ -181,7 +181,7 @@
   ],
   "config": [
     [
-      "https://example.com/dummy-settings.json",
+      "https://raw.githubusercontent.com/OfficeAtNite/Threat-Analytics-Search/refs/heads/main/dist/settings.json",
       false,
       false,
       "",
