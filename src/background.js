@@ -323,24 +323,24 @@ export var ContextualMenu = {
   // --- Click handlers --- //
 
   providerClicked: async function (info, tab) {
-    var providers = await LocalStore.getOne(StoreKey.SEARCH_PROVIDERS);
-    var provider = _.find(providers, function (item) {
-      return item.menuIndex === info.menuItemId;
+  var providers = await LocalStore.getOne(StoreKey.SEARCH_PROVIDERS);
+  var provider = _.find(providers, function (item) {
+    return item.menuIndex === info.menuItemId;
+  });
+
+  if (provider) {
+    var targetURL = getProviderTargetURL(provider, info.selectionText);
+    var settings = await LocalStore.getOne(StoreKey.SETTINGS);
+
+    var index = settings.enableAdjacentTabs ? tab.index + 1 : null;
+
+    (chrome.tabs || browser.tabs).create({
+      url: targetURL,
+      active: !settings.resultsInBackgroundTab,
+      index: index,
     });
-
-    if (provider) {
-      var targetURL = getProviderTargetURL(provider, info.selectionText);
-      var settings = await LocalStore.getOne(StoreKey.SETTINGS);
-
-      var index = settings.enableAdjacentTabs ? tab.index + 1 : null;
-
-      chrome.tabs.create({
-        url: targetURL,
-        selected: !settings.resultsInBackgroundTab,
-        index: index,
-      });
-    }
-  },
+  }
+},
 
   groupClicked: async function (info, tab) {
     var settings = await LocalStore.getOne(StoreKey.SETTINGS);
